@@ -51,6 +51,7 @@ for ticker in TICKERS:
             if response.status_code == 200:
                 data = pd.read_csv(StringIO(response.text))
                 all_data = pd.concat([all_data, data], ignore_index=True)
+                print(f"Downloaded {ticker} stock data for year {year}")
             else:
                 print(f"Failed to download data for {ticker} link: {link}. HTTP Status Code: {response.status_code}")
         except Exception as e:
