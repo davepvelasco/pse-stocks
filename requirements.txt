@@ -1,4 +1,12 @@
-curl_cffi
+tensorflow[and-cuda]
+tf2onnx
 optuna
 pandas
 pandas-ta
+seleniumbase
+numpy
+scikit-learn
+matplotlib
+seaborn
+yfinance
+./fastquant
